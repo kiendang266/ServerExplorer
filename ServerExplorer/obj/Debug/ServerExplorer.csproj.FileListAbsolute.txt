@@ -1,0 +1,5 @@
+E:\Projects\ServerExplorer\ServerExplorer\bin\ServerExplorer.dll
+E:\Projects\ServerExplorer\ServerExplorer\bin\ServerExplorer.pdb
+E:\Projects\ServerExplorer\ServerExplorer\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\ServerExplorer\ServerExplorer\obj\Debug\ServerExplorer.dll
+E:\Projects\ServerExplorer\ServerExplorer\obj\Debug\ServerExplorer.pdb

@@ -1,0 +1,237 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE8C7636-9653-4EDA-BF71-408649F11F52}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServerExplorer</RootNamespace>
+    <AssemblyName>ServerExplorer</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Explorer.aspx" />
+    <Content Include="ExplorerEngine.aspx" />
+    <Content Include="ExplorerUploads.aspx" />
+    <Content Include="img\ajax-loader.gif" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\edit.png" />
+    <Content Include="img\filetypes\aac.png" />
+    <Content Include="img\filetypes\ai.png" />
+    <Content Include="img\filetypes\aiff.png" />
+    <Content Include="img\filetypes\avi.png" />
+    <Content Include="img\filetypes\bmp.png" />
+    <Content Include="img\filetypes\c.png" />
+    <Content Include="img\filetypes\cpp.png" />
+    <Content Include="img\filetypes\css.png" />
+    <Content Include="img\filetypes\dat.png" />
+    <Content Include="img\filetypes\dmg.png" />
+    <Content Include="img\filetypes\doc.png" />
+    <Content Include="img\filetypes\docx.png" />
+    <Content Include="img\filetypes\dotx.png" />
+    <Content Include="img\filetypes\dwg.png" />
+    <Content Include="img\filetypes\dxf.png" />
+    <Content Include="img\filetypes\eps.png" />
+    <Content Include="img\filetypes\exe.png" />
+    <Content Include="img\filetypes\flv.png" />
+    <Content Include="img\filetypes\gif.png" />
+    <Content Include="img\filetypes\h.png" />
+    <Content Include="img\filetypes\hpp.png" />
+    <Content Include="img\filetypes\htm.png" />
+    <Content Include="img\filetypes\html.png" />
+    <Content Include="img\filetypes\ics.png" />
+    <Content Include="img\filetypes\iso.png" />
+    <Content Include="img\filetypes\java.png" />
+    <Content Include="img\filetypes\jpg.png" />
+    <Content Include="img\filetypes\key.png" />
+    <Content Include="img\filetypes\mid.png" />
+    <Content Include="img\filetypes\mp3.png" />
+    <Content Include="img\filetypes\mp4.png" />
+    <Content Include="img\filetypes\mpg.png" />
+    <Content Include="img\filetypes\odf.png" />
+    <Content Include="img\filetypes\ods.png" />
+    <Content Include="img\filetypes\odt.png" />
+    <Content Include="img\filetypes\otp.png" />
+    <Content Include="img\filetypes\ots.png" />
+    <Content Include="img\filetypes\ott.png" />
+    <Content Include="img\filetypes\pdf.png" />
+    <Content Include="img\filetypes\php.png" />
+    <Content Include="img\filetypes\png.png" />
+    <Content Include="img\filetypes\ppt.png" />
+    <Content Include="img\filetypes\pptx.png" />
+    <Content Include="img\filetypes\psd.png" />
+    <Content Include="img\filetypes\py.png" />
+    <Content Include="img\filetypes\qt.png" />
+    <Content Include="img\filetypes\rar.png" />
+    <Content Include="img\filetypes\rb.png" />
+    <Content Include="img\filetypes\rtf.png" />
+    <Content Include="img\filetypes\sql.png" />
+    <Content Include="img\filetypes\tga.png" />
+    <Content Include="img\filetypes\tgz.png" />
+    <Content Include="img\filetypes\tiff.png" />
+    <Content Include="img\filetypes\txt.png" />
+    <Content Include="img\filetypes\wav.png" />
+    <Content Include="img\filetypes\xls.png" />
+    <Content Include="img\filetypes\xlsx.png" />
+    <Content Include="img\filetypes\xml.png" />
+    <Content Include="img\filetypes\yml.png" />
+    <Content Include="img\filetypes\zip.png" />
+    <Content Include="img\filetypes\_blank.png" />
+    <Content Include="img\filetypes\_page.png" />
+    <Content Include="img\new.png" />
+    <Content Include="img\open.png" />
+    <Content Include="img\resize.png" />
+    <Content Include="scripts\engine.js" />
+    <Content Include="scripts\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="scripts\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="scripts\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="scripts\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="scripts\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="scripts\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="scripts\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="scripts\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="scripts\images\ui-icons_222222_256x240.png" />
+    <Content Include="scripts\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\images\ui-icons_454545_256x240.png" />
+    <Content Include="scripts\images\ui-icons_888888_256x240.png" />
+    <Content Include="scripts\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="scripts\jquery.contextmenu.r2.packed.js" />
+    <Content Include="scripts\jquery.ui.button.min.js" />
+    <Content Include="scripts\jquery.ui.core.min.js" />
+    <Content Include="scripts\jquery.ui.dialog.min.js" />
+    <Content Include="scripts\jquery.ui.mouse.min.js" />
+    <Content Include="scripts\jquery.ui.position.min.js" />
+    <Content Include="scripts\jquery.ui.selectable.min.js" />
+    <Content Include="scripts\jquery.ui.theme.css" />
+    <Content Include="scripts\jquery.ui.widget.min.js" />
+    <Content Include="scripts\jsTree\jquery.js" />
+    <Content Include="scripts\jsTree\jquery.jstree.js" />
+    <Content Include="scripts\jsTree\server.aspx" />
+    <Content Include="scripts\jsTree\themes\apple\bg.jpg" />
+    <Content Include="scripts\jsTree\themes\apple\d.png" />
+    <Content Include="scripts\jsTree\themes\apple\dot_for_ie.gif" />
+    <Content Include="scripts\jsTree\themes\apple\style.css" />
+    <Content Include="scripts\jsTree\themes\apple\throbber.gif" />
+    <Content Include="scripts\jsTree\themes\classic\d.png" />
+    <Content Include="scripts\jsTree\themes\classic\dot_for_ie.gif" />
+    <Content Include="scripts\jsTree\themes\classic\style.css" />
+    <Content Include="scripts\jsTree\themes\classic\throbber.gif" />
+    <Content Include="scripts\jsTree\themes\default-rtl\d.gif" />
+    <Content Include="scripts\jsTree\themes\default-rtl\d.png" />
+    <Content Include="scripts\jsTree\themes\default-rtl\dots.gif" />
+    <Content Include="scripts\jsTree\themes\default-rtl\style.css" />
+    <Content Include="scripts\jsTree\themes\default-rtl\throbber.gif" />
+    <Content Include="scripts\jsTree\themes\default\d.gif" />
+    <Content Include="scripts\jsTree\themes\default\d.png" />
+    <Content Include="scripts\jsTree\themes\default\style.css" />
+    <Content Include="scripts\jsTree\themes\default\throbber.gif" />
+    <Content Include="style.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Explorer.aspx.cs">
+      <DependentUpon>Explorer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Explorer.aspx.designer.cs">
+      <DependentUpon>Explorer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExplorerEngine.aspx.cs">
+      <DependentUpon>ExplorerEngine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExplorerEngine.aspx.designer.cs">
+      <DependentUpon>ExplorerEngine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExplorerUploads.aspx.cs">
+      <DependentUpon>ExplorerUploads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExplorerUploads.aspx.designer.cs">
+      <DependentUpon>ExplorerUploads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="scripts\jsTree\server.aspx.cs">
+      <DependentUpon>server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scripts\jsTree\server.aspx.designer.cs">
+      <DependentUpon>server.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49246</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

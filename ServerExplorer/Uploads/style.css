@@ -1,0 +1,130 @@
+﻿html,body{
+	margin:10px;
+	height:100%;
+	font-family: Verdana;
+	overflow: hidden;
+}
+
+h1
+{
+	font-size: 16px;
+}
+
+#colTree
+{
+	width:200px;
+	height: 100%;
+	float: left;
+	overflow: auto;
+	padding-left: 10px;
+	border: solid 1px #ccc;
+	font-size: 11px;
+	background-color: #eee;
+}
+
+.jstree-default-context
+{
+	font-size: 11px;
+}
+
+.jstree li
+{
+	background-image: none !important;
+	background-color: #eee !important;	
+}
+
+#colUpload
+{
+	float: left;
+	overflow: auto;
+	border: solid 1px #ccc;
+	margin-left: 10px;
+	height: 40px;
+	overflow: hidden;
+	background-color: #eee;
+}
+
+#colUpload iframe
+{
+	width:100%;
+	overflow: hidden;
+}
+
+#colExplorer
+{
+	float: left;
+	overflow: auto;
+	border: solid 1px #ccc;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: #eee;
+}
+
+.thumbsLoader
+{
+	display: block;
+	width: 100%;
+	height:100px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.thumb
+{
+	float: left;
+	padding: 10px;
+	border: solid 1px #ccc;
+	cursor: pointer;
+	width:100px;
+	height: 100px;
+	margin:5px;
+	background-color: #fff;
+}
+
+div.thumb_image
+{
+	height: 75px;
+	display: block;
+	text-align: center;
+	width:100%;
+	line-height: 75px;
+}
+
+div.thumb_image img
+{
+	margin:auto;
+}
+
+.thumb_name, .thumb_size
+{
+	display:block;
+	font-size: 10px;
+}
+
+#thumbs .ui-selecting { background: #FECA40; }
+#thumbs .ui-selected { background: #F39814; color: white; }
+
+.ui-dialog-title, .ui-button-text
+{
+	font-size: 13px;
+}
+
+
+
+.resizeCol1
+{
+	width: 130px;
+	float: left;
+	font-size: 11px;
+}
+.resizeCol2
+{
+	width: 200px;
+	float: left;
+	font-size: 11px;
+}
+
+.resizeTamanioX, .resizeTamanioY
+{
+	width: 30px;
+}
